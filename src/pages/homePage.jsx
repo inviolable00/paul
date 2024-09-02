@@ -107,8 +107,7 @@ function HomePage() {
     <div
       className={`min-h-screen relative ${
         darkMode ? "bg-gray-900 text-gray-100" : "bg-gray-50 text-gray-800"
-      } py-6 px-4 sm:px-6 lg:px-8 font-serif transition-colors duration-300`}
-    >
+      } py-6 px-4 sm:px-6 lg:px-8 font-serif transition-colors duration-300`}>
       {/* Particles only visible on small screens or in dark mode */}
       {(darkMode || window.innerWidth < 768) && (
         <Particles
@@ -131,8 +130,7 @@ function HomePage() {
             className={`p-2 rounded-full ${
               darkMode ? "bg-white text-gray-900" : "bg-gray-300 text-gray-700"
             } transition-all duration-300 hover:scale-110`}
-            onClick={toggleDarkMode}
-          >
+            onClick={toggleDarkMode}>
             {darkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
         </nav>
@@ -141,8 +139,7 @@ function HomePage() {
           <Link to="/" className="flex items-center space-x-4 group">
             <img
               src="paul.jpeg"
-              className="w-20 h-20 rounded-full group-hover:animate-pulse"
-            ></img>
+              className="w-20 h-20 rounded-full group-hover:animate-pulse"></img>
             <h1 className="text-4xl font-thin font-sans transition-colors duration-300">
               Paul Onoja
             </h1>
@@ -152,16 +149,16 @@ function HomePage() {
         <section className="mb-16 prose prose-lg dark:prose-invert max-w-none">
           <p className="text-2xl ml-4 mb-4">My name is ^</p>
           <p className="mb-4">
-            I love to learn new things, be it computers or culture, math or
-            history, physics or philosophy.
+            I fancy computers, science in general, art, philosophy and politics.
+            Dostoevsky fanboy.
           </p>
           <p>
-            I'm an avid reader, writer, and programmer. I love reading blogs on
-            any topic and my own attempts at writing are{" "}
+            Computing wise, I am interested in low-level programming, quantum
+            computing and deeplearning{" "}
             <Link to="/writings" className="text-blue-500 hover:underline">
               here
             </Link>
-            . As a programmer, I enjoy working on{" "}
+            . As a computer scientist, I enjoy working on{" "}
             <Link to="/projects" className="text-blue-500 hover:underline">
               various projects
             </Link>
@@ -170,8 +167,7 @@ function HomePage() {
               href="https://twitter.com"
               className="text-blue-500 hover:underline"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               Twitter
             </a>
             .
@@ -185,8 +181,7 @@ function HomePage() {
               darkMode ? "bg-gray-800" : "bg-white"
             } rounded-lg p-6 border-l-4 ${
               index % 2 === 0 ? "border-blue-500" : "border-purple-500"
-            } transition-colors duration-300`}
-          >
+            } transition-colors duration-300`}>
             <h2 className="text-2xl font-medium mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 flex items-center">
               <section.icon size={24} className="mr-2" />
               {section.title}
@@ -201,8 +196,7 @@ function HomePage() {
                       .replace(/\s+/g, "-")}/${item
                       .toLowerCase()
                       .replace(/\s+/g, "-")}`}
-                    className="block group"
-                  >
+                    className="block group">
                     <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
                       {item}
                       <ArrowRight
@@ -213,8 +207,7 @@ function HomePage() {
                     <p
                       className={`${
                         darkMode ? "text-gray-400" : "text-gray-600"
-                      } mt-1`}
-                    >
+                      } mt-1`}>
                       Brief description of {item.toLowerCase()} project or
                       interest.
                     </p>
@@ -228,8 +221,7 @@ function HomePage() {
         <section
           className={`mb-16 ${
             darkMode ? "bg-gray-800" : "bg-white"
-          } rounded-lg p-6 border-l-4 border-green-500 transition-colors duration-300`}
-        >
+          } rounded-lg p-6 border-l-4 border-green-500 transition-colors duration-300`}>
           <h2 className="text-2xl font-medium mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 flex items-center">
             <Bookmark size={24} className="mr-2" />
             Notes
@@ -247,8 +239,7 @@ function HomePage() {
                 key={index}
                 className={`flex justify-between items-center group p-2 rounded ${
                   darkMode ? "hover:bg-gray-700" : "hover:bg-gray-100"
-                } transition-colors duration-300`}
-              >
+                } transition-colors duration-300`}>
                 <span className="group-hover:text-blue-500 transition-colors duration-300 flex items-center">
                   {note.title}
                   <ArrowRight
@@ -259,8 +250,7 @@ function HomePage() {
                 <span
                   className={`${
                     darkMode ? "text-gray-400" : "text-gray-500"
-                  } text-sm`}
-                >
+                  } text-sm`}>
                   {note.weeks} weeks ago
                 </span>
               </Link>
