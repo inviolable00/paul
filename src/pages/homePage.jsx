@@ -14,7 +14,7 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 
 function HomePage() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -129,9 +129,7 @@ function HomePage() {
           </ol>
           <button
             className={`p-2 rounded-full ${
-              darkMode
-                ? "bg-white text-gray-900"
-                : "bg-gray-300 text-gray-700"
+              darkMode ? "bg-white text-gray-900" : "bg-gray-300 text-gray-700"
             } transition-all duration-300 hover:scale-110`}
             onClick={toggleDarkMode}
           >
@@ -142,7 +140,7 @@ function HomePage() {
         <header className="flex flex-col sm:flex-row items-center justify-between mb-8">
           <Link to="/" className="flex items-center space-x-4 group">
             <img
-              src="paul.jpg"
+              src="paul.jpeg"
               className="w-20 h-20 rounded-full group-hover:animate-pulse"
             ></img>
             <h1 className="text-4xl font-thin font-sans transition-colors duration-300">
