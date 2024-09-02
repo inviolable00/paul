@@ -142,7 +142,7 @@ function HomePage() {
         <header className="flex flex-col sm:flex-row items-center justify-between mb-8">
           <Link to="/" className="flex items-center space-x-4 group">
             <img
-              src="paul.jpg"
+              src="paul.jpeg"
               className="w-20 h-20 rounded-full group-hover:animate-pulse"
             ></img>
             <h1 className="text-4xl font-thin font-sans transition-colors duration-300">
