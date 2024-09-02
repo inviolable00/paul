@@ -21,11 +21,48 @@ function HomePage() {
   };
 
   const sections = [
-    { title: "Interests", icon: Lightbulb },
-    { title: "Publications", icon: Book },
-    { title: "Projects", icon: Code },
-    { title: "Currently Working On", icon: Bookmark },
-    { title: "Hobbies", icon: Palette },
+    {
+      title: "Interests",
+      icon: Lightbulb,
+      body: [
+        "Low Level Programming",
+        "Quantum computing(compilation)",
+        "Deep Learning & Quantum Machine Learning",
+      ],
+    },
+    {
+      title: "Publications",
+      icon: Book,
+      body: [
+        "Quantum Computing for Computer Scientists: A Review",
+        "Reverse Engineering Memory Management Functions for the MSVC Compiler",
+      ],
+    },
+    {
+      title: "Projects",
+      icon: Code,
+      body: [
+        "Auto Free",
+        "Simple Autograd: C",
+        "Math Quiz app: C",
+        "Ibegwu- a web App",
+        "Tried Parallelizing a Custom Written Transformer Model",
+      ],
+    },
+    {
+      title: "Currently Working On",
+      icon: Bookmark,
+      body: ["Tabula-Rasa", "Ibegwu", "MakeMore -Andrej Karpathy"],
+    },
+    {
+      title: "Hobbies",
+      icon: Palette,
+      body: [
+        "watching anime and movies",
+        "reading novels",
+        "learning new interesting things",
+      ],
+    },
   ];
 
   const particlesInit = useCallback(async (engine) => {
@@ -150,15 +187,16 @@ function HomePage() {
           <p className="text-2xl ml-4 mb-4">My name is ^</p>
           <p className="mb-4">
             I fancy computers, science in general, art, philosophy and politics.
-            Dostoevsky fanboy.
+            Also a Dostoevsky and Naruto fanboy&#128519;
           </p>
           <p>
             Computing wise, I am interested in low-level programming, quantum
-            computing and deeplearning{" "}
+            computing and deeplearning. I am also a cofounder and CTO of
+            tabula-rasa{" "}
             <Link to="/writings" className="text-blue-500 hover:underline">
               here
             </Link>
-            . As a computer scientist, I enjoy working on{" "}
+            <br></br>As a computer scientist, I enjoy working on{" "}
             <Link to="/projects" className="text-blue-500 hover:underline">
               various projects
             </Link>
@@ -187,33 +225,31 @@ function HomePage() {
               {section.title}
             </h2>
             <div className="space-y-6">
-              {["Deep Learning in C", "Vector Indexes in Go"].map(
-                (item, idx) => (
-                  <Link
-                    key={idx}
-                    to={`/${section.title
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}/${item
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}`}
-                    className="block group">
-                    <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
-                      {item}
-                      <ArrowRight
-                        className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
-                        size={20}
-                      />
-                    </h3>
-                    <p
-                      className={`${
-                        darkMode ? "text-gray-400" : "text-gray-600"
-                      } mt-1`}>
-                      Brief description of {item.toLowerCase()} project or
-                      interest.
-                    </p>
-                  </Link>
-                )
-              )}
+              {section.body.map((item, idx) => (
+                <Link
+                  key={idx}
+                  to={`/${section.title
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")}/${item
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")}`}
+                  className="block group">
+                  <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
+                    {item}
+                    <ArrowRight
+                      className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
+                      size={20}
+                    />
+                  </h3>
+                  <p
+                    className={`${
+                      darkMode ? "text-gray-400" : "text-gray-600"
+                    } mt-1`}>
+                    Brief description of {item.toLowerCase()} project or
+                    interest.
+                  </p>
+                </Link>
+              ))}
             </div>
           </section>
         ))}
