@@ -29,6 +29,11 @@ function HomePage() {
         "Quantum computing(compilation)",
         "Deep Learning & Quantum Machine Learning",
       ],
+      desc: [
+        "classical compilation, OS dev, reverse engineering",
+        "quantum compilation, quantum machine learning",
+        "transormers, deep reinforcement learning",
+      ],
     },
     {
       title: "Publications",
@@ -37,6 +42,10 @@ function HomePage() {
         "Quantum Computing for Computer Scientists: A Review",
         "Reverse Engineering Memory Management Functions for the MSVC Compiler",
       ],
+      desc: [
+        "an easy to understand intro to quantum computing for people in comp sci",
+        "worked on regaining custom implementations of malloc, calloc, free, realloc for ease of understanding of the inner workings of compilers",
+      ],
     },
     {
       title: "Projects",
@@ -44,15 +53,25 @@ function HomePage() {
       body: [
         "Auto Free",
         "Simple Autograd: C",
-        "Math Quiz app: C",
         "Ibegwu- a web App",
-        "Tried Parallelizing a Custom Written Transformer Model",
+        "Parallelizing a Custom Written Transformer Model",
+      ],
+      desc: [
+        "auto allocated memory freer in C PL",
+        "autograd for math expression in C (inspired by andrej karpathy)",
+        "an app for speakers of my native language (igala) to learn about their history and language",
+        "tried parallelizing a custom written transformer model",
       ],
     },
     {
       title: "Currently Working On",
       icon: Bookmark,
-      body: ["Tabula-Rasa", "Ibegwu", "MakeMore -Andrej Karpathy"],
+      body: ["Tabula-Rasa", "Ibegwu", "MakeMore"],
+      desc: [
+        "a start up for african languages",
+        "an app for speakers of my native language (igala) to learn about their history and language",
+        "attempts at generating AI names (inspired by andrej karpathy)",
+      ],
     },
     {
       title: "Hobbies",
@@ -61,6 +80,11 @@ function HomePage() {
         "watching anime and movies",
         "reading novels",
         "learning new interesting things",
+      ],
+      desc: [
+        "watched over 500+ anime and movies (favorites: naruto, bladerunner2049)",
+        "love russian writers and classic novels (favorites: dostoevsky, tolstoy",
+        "read on random things I find interesting especially in physics, nature, psychology, philosophy, history, african politics and more",
       ],
     },
   ];
@@ -245,8 +269,9 @@ function HomePage() {
                     className={`${
                       darkMode ? "text-gray-400" : "text-gray-600"
                     } mt-1`}>
-                    Brief description of {item.toLowerCase()} project or
-                    interest.
+                    {section.desc && section.desc[idx]
+                      ? section.desc[idx]
+                      : `Brief description of ${item.toLowerCase()} project or interest.`}
                   </p>
                 </Link>
               ))}
@@ -254,7 +279,7 @@ function HomePage() {
           </section>
         ))}
 
-        <section
+        {/* <section
           className={`mb-16 ${
             darkMode ? "bg-gray-800" : "bg-white"
           } rounded-lg p-6 border-l-4 border-green-500 transition-colors duration-300`}>
@@ -292,7 +317,7 @@ function HomePage() {
               </Link>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
