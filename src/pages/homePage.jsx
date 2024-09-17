@@ -34,6 +34,7 @@ function HomePage() {
         "quantum compilation, quantum machine learning",
         "transormers, deep reinforcement learning",
       ],
+      link: ["", "", ""],
     },
     {
       title: "Publications",
@@ -44,7 +45,11 @@ function HomePage() {
       ],
       desc: [
         "an easy to understand intro to quantum computing for people in comp sci",
-        "worked on regaining custom implementations of malloc, calloc, free, realloc for ease of understanding of the inner workings of compilers",
+        "worked on reverse engineering custom implementations of malloc, calloc, free, realloc for ease of understanding of the inner workings of compilers and how they interact directly with the OS and other OS specific functions",
+      ],
+      link: [
+        "https://www.ejmanager.com/mnstemps/262/262-1688073623.pdf?t=1726615424",
+        "https://drive.google.com/file/d/14xT7T-hm7zfnCMiZ9Llb_3DyR0t-sspy/view?usp=share_link",
       ],
     },
     {
@@ -57,10 +62,16 @@ function HomePage() {
         "Parallelizing a Custom Written Transformer Model",
       ],
       desc: [
-        "auto allocated memory freer in C PL",
+        "auto allocated memory freer in C",
         "autograd for math expression in C (inspired by andrej karpathy)",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "tried parallelizing a custom written transformer model",
+      ],
+      link: [
+        "https://github.com/feelerx/autofreer",
+        "",
+        "https://github.com/inviolable00/ibegwu",
+        "",
       ],
     },
     {
@@ -71,6 +82,11 @@ function HomePage() {
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
+      ],
+      link: [
+        "https://tabularasaone.vercel.app",
+        "https://github.com/inviolable00/ibegwu",
+        "",
       ],
     },
     {
@@ -83,9 +99,10 @@ function HomePage() {
       ],
       desc: [
         "watched over 500+ anime and movies (favorites: naruto, bladerunner2049)",
-        "love russian writers and classic novels (favorites: dostoevsky, tolstoy",
+        "love russian writers and classic novels (favorites: dostoevsky, tolstoy)",
         "read on random things I find interesting especially in physics, nature, psychology, philosophy, history, african politics and more",
       ],
+      link: ["", "", ""],
     },
   ];
 
@@ -250,30 +267,29 @@ function HomePage() {
             </h2>
             <div className="space-y-6">
               {section.body.map((item, idx) => (
-                <Link
-                  key={idx}
-                  to={`/${section.title
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")}/${item
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")}`}
-                  className="block group">
-                  <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
-                    {item}
-                    <ArrowRight
-                      className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
-                      size={20}
-                    />
-                  </h3>
-                  <p
-                    className={`${
-                      darkMode ? "text-gray-400" : "text-gray-600"
-                    } mt-1`}>
-                    {section.desc && section.desc[idx]
-                      ? section.desc[idx]
-                      : `Brief description of ${item.toLowerCase()} project or interest.`}
-                  </p>
-                </Link>
+                <>
+                  <a
+                    key={idx}
+                    href={section.link[idx]}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
+                      {item}
+                      <ArrowRight
+                        className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
+                        size={20}
+                      />
+                    </h3>
+                    <p
+                      className={`${
+                        darkMode ? "text-gray-400" : "text-gray-600"
+                      } mt-1`}>
+                      {section.desc && section.desc[idx]
+                        ? section.desc[idx]
+                        : `Brief description of ${item.toLowerCase()} project or interest.`}
+                    </p>
+                  </a>
+                </>
               ))}
             </div>
           </section>
