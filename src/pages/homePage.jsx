@@ -233,23 +233,26 @@ function HomePage() {
           <p>
             Computing wise, I am interested in low-level programming, quantum
             computing and deeplearning. I am also a cofounder and CTO of
-            tabula-rasa{" "}
-            <Link to="/writings" className="text-blue-500 hover:underline">
-              here
-            </Link>
-            <br></br>As a computer scientist, I enjoy working on{" "}
-            <Link to="/projects" className="text-blue-500 hover:underline">
-              various projects
-            </Link>
-            . Feel free to reach out on{" "}
             <a
-              href="https://twitter.com"
+              href="https://tabularasaone.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline">
+              {" "}
+              tabula rasa
+            </a>
+            .<br></br>As a computer scientist, I enjoy working on various
+            computing projects. I am currently interested in building a quantum
+            compiler. Feel free to reach out through my{" "}
+            <a
+              href="mailto:onojaopaul@gmail.com"
               className="text-blue-500 hover:underline"
               target="_blank"
               rel="noopener noreferrer">
-              Twitter
-            </a>
-            .
+              email
+            </a>{" "}
+            if you have other projects or opportunities you think might interest
+            me.
           </p>
         </section>
 
@@ -267,29 +270,33 @@ function HomePage() {
             </h2>
             <div className="space-y-6">
               {section.body.map((item, idx) => (
-                <>
-                  <a
-                    key={idx}
-                    href={section.link[idx]}
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
-                      {item}
-                      <ArrowRight
-                        className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
-                        size={20}
-                      />
-                    </h3>
-                    <p
-                      className={`${
-                        darkMode ? "text-gray-400" : "text-gray-600"
-                      } mt-1`}>
-                      {section.desc && section.desc[idx]
-                        ? section.desc[idx]
-                        : `Brief description of ${item.toLowerCase()} project or interest.`}
-                    </p>
-                  </a>
-                </>
+                <div key={idx}>
+                  {section.link[idx] ? (
+                    <a
+                      href={section.link[idx]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group">
+                      <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
+                        {item}
+                        <ArrowRight
+                          className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
+                          size={20}
+                        />
+                      </h3>
+                    </a>
+                  ) : (
+                    <h3 className="text-xl font-medium">{item}</h3>
+                  )}
+                  <p
+                    className={`${
+                      darkMode ? "text-gray-400" : "text-gray-600"
+                    } mt-1`}>
+                    {section.desc && section.desc[idx]
+                      ? section.desc[idx]
+                      : `Brief description of ${item.toLowerCase()} project or interest.`}
+                  </p>
+                </div>
               ))}
             </div>
           </section>
