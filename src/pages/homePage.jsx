@@ -41,7 +41,7 @@ function HomePage() {
       title: "Publications",
       icon: Book,
       body: [
-        "Quantum Computing for Computer Scientists: A Review",
+        "Computer Science for Quantum Computing: A Review",
         "Reverse Engineering Memory Management Functions for the MSVC Compiler",
       ],
       desc: [
