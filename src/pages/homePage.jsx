@@ -60,18 +60,21 @@ function HomePage() {
         "Simple Autograd: C",
         "Ibegwu- a web App",
         "Parallelizing a Custom Written Transformer Model",
+        "Infleqtion - Quantum Computer-Aided Design of Atomic Clocks",
       ],
       desc: [
         "auto allocated memory freer in C",
         "autograd for math expression in C (inspired by andrej karpathy)",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "tried parallelizing a custom written transformer model",
+        "wrote and optimized openQasm code to reduce quantum circuit depth",
       ],
       link: [
         "https://github.com/feelerx/autofreer",
-        "",
+        "https://github.com/feelerx/AutoGrad",
         "https://github.com/inviolable00/ibegwu",
         "",
+        "https://github.com/feelerx/QRise2024",
       ],
     },
     {
@@ -86,7 +89,7 @@ function HomePage() {
       link: [
         "https://tabularasaone.vercel.app",
         "https://github.com/inviolable00/ibegwu",
-        "",
+        "https://github.com/feelerx/MakeMore",
       ],
     },
     {
@@ -251,8 +254,7 @@ function HomePage() {
               rel="noopener noreferrer">
               email
             </a>{" "}
-            if you have other projects or opportunities you think might interest
-            me.
+            if you have any project or opportunity you think might interest me.
           </p>
         </section>
 
