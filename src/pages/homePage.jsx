@@ -9,6 +9,7 @@ import {
   Code,
   Lightbulb,
   Palette,
+  ArrowSquareOut,
 } from "@phosphor-icons/react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
@@ -26,7 +27,7 @@ function HomePage() {
       icon: Lightbulb,
       body: [
         "Low Level Programming",
-        "Quantum computing(compilation)",
+        "Quantum Computing (compilation)",
         "Deep Learning & Quantum Machine Learning",
       ],
       desc: [
@@ -57,36 +58,43 @@ function HomePage() {
       icon: Code,
       body: [
         "Auto Free",
-        "Simple Autograd: C",
-        "Ibegwu- a web App",
-        "Parallelizing a Custom Written Transformer Model",
         "Infleqtion - Quantum Computer-Aided Design of Atomic Clocks",
+        "Simple Autograd: C",
+        "Ibegwu- a Web App",
+        "Parallelizing a Custom Written Transformer Model",
       ],
       desc: [
         "auto allocated memory freer in C",
+        "wrote and optimized openQasm code to reduce quantum circuit depth",
         "autograd for math expression in C (inspired by andrej karpathy)",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "tried parallelizing a custom written transformer model",
-        "wrote and optimized openQasm code to reduce quantum circuit depth",
       ],
       link: [
         "https://github.com/feelerx/autofreer",
+        "https://github.com/feelerx/QRise2024",
         "https://github.com/feelerx/AutoGrad",
         "https://github.com/inviolable00/ibegwu",
         "",
-        "https://github.com/feelerx/QRise2024",
       ],
     },
     {
       title: "Currently Working On",
       icon: Bookmark,
-      body: ["Tabula-Rasa", "Ibegwu", "MakeMore"],
+      body: [
+        "Creating a Quantum Compiler",
+        "Tabula-Rasa",
+        "Ibegwu",
+        "MakeMore",
+      ],
       desc: [
+        "Currently trying to build an advanced version of a Quantum compiler based off Quplexity",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
       ],
       link: [
+        "",
         "https://tabularasaone.vercel.app",
         "https://github.com/inviolable00/ibegwu",
         "https://github.com/feelerx/MakeMore",
@@ -96,9 +104,9 @@ function HomePage() {
       title: "Hobbies",
       icon: Palette,
       body: [
-        "watching anime and movies",
-        "reading novels",
-        "learning new interesting things",
+        "Watching Anime and Movies",
+        "Reading Novels",
+        "Learning New Interesting Things",
       ],
       desc: [
         "watched over 500+ anime and movies (favorites: naruto, bladerunner2049)",
@@ -264,9 +272,12 @@ function HomePage() {
             className={`mb-16 ${
               darkMode ? "bg-gray-800" : "bg-white"
             } rounded-lg p-6 border-l-4 ${
-              index % 2 === 0 ? "border-blue-500" : "border-purple-500"
+              index % 2 === 0 ? "border-cyan-900" : "border-blue-400"
             } transition-colors duration-300`}>
-            <h2 className="text-2xl font-medium mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 flex items-center">
+            <h2
+              className={`text-2xl font-medium mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 flex items-center ${
+                darkMode ? "text-cyan-600" : "text-cyan-600"
+              }`}>
               <section.icon size={24} className="mr-2" />
               {section.title}
             </h2>
@@ -279,12 +290,18 @@ function HomePage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group">
-                      <h3 className="text-xl font-medium group-hover:text-blue-500 transition-colors duration-300 flex items-center">
+                      <h3 className="text-xl font-medium text-blue-300 group-hover:text-blue-600 transition-colors duration-300 flex items-center">
                         {item}
-                        <ArrowRight
-                          className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
-                          size={20}
-                        />
+                        <span className="relative ml-2 w-5 h-5">
+                          <ArrowSquareOut
+                            className="absolute inset-0 text-blue-400 group-hover:opacity-0 group-hover:translate-x-1 group-hover:-translate-y-1 dark:text-blue-300 transition-all duration-300"
+                            size={12}
+                          />
+                          <ArrowRight
+                            className="absolute inset-0 text-blue-500 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 dark:text-blue-500 transition-all duration-300"
+                            size={20}
+                          />
+                        </span>
                       </h3>
                     </a>
                   ) : (
@@ -295,7 +312,26 @@ function HomePage() {
                       darkMode ? "text-gray-400" : "text-gray-600"
                     } mt-1`}>
                     {section.desc && section.desc[idx]
-                      ? section.desc[idx]
+                      ? // ? section.desc[idx]
+                        // ALL THESE JUST TO ADD A LINK TO THE WORD QUPLEXITY
+                        // CAN REMOVE ALL THESE AND JUST UNCOMMENT THE ONE LINE ABOVE
+                        // I DON'T LIKE AS IT BRINGS ABOUT UNNECESSARY COMPLEXITY
+                        section.desc[idx]
+                          .split("Quplexity")
+                          .map((part, i, arr) => (
+                            <React.Fragment key={i}>
+                              {part}
+                              {i < arr.length - 1 && (
+                                <a
+                                  href="https://github.com/MrGilli/Quplexity"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-blue-300 hover:text-blue-600">
+                                  Quplexity
+                                </a>
+                              )}
+                            </React.Fragment>
+                          ))
                       : `Brief description of ${item.toLowerCase()} project or interest.`}
                   </p>
                 </div>
