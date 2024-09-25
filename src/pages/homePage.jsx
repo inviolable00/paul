@@ -208,11 +208,29 @@ function HomePage() {
       )}
       <div className="max-w-4xl mx-auto relative z-10">
         <nav className="mb-6 flex justify-between items-center">
-          <ol className="flex space-x-2 text-sm text-gray-500">
+          <ol className="flex space-x-4 text-sm text-gray-500">
             <li>
               <Link to="/" className="hover:text-blue-400 transition-colors">
                 Home
               </Link>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1M6MtKktb9nLzaz81PAkh6abP1AGnrqXf/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors">
+                CV
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1EtMvf7vZNojO9uQpITx1vXI-ZNzGqiS5/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition-colors">
+                Research Statement
+              </a>
             </li>
           </ol>
           <button
