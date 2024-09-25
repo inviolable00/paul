@@ -230,8 +230,8 @@ function HomePage() {
         <section className="mb-16 prose prose-lg dark:prose-invert max-w-none">
           <p className="text-2xl ml-4 mb-4">My name is ^</p>
           <p className="mb-4">
-            I fancy computers, science in general, art, philosophy and politics.
-            Also a Dostoevsky and Naruto fanboy&#128519;
+            I fancy computers, science in general, art, philosophy and african
+            politics. Also a Dostoevsky and Naruto fanboy&#128519;
           </p>
           <p>
             Computing wise, I am interested in low-level programming, quantum
