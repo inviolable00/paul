@@ -374,6 +374,10 @@ function HomePage() {
           <div className="space-y-4">
             {[
               {
+                title: "My Favorite Goto Tech Blog",
+                link: "https://mohitmishra786.github.io/UnderTheHood/",
+              },
+              {
                 title:
                   "Quantum Convolutional Neural Networks Useless?? They Might be Classically Simulatable",
                 link: "https://arxiv.org/abs/2408.12739",
@@ -391,6 +395,10 @@ function HomePage() {
                 link: "https://brooker.co.za/blog/2024/07/29/aurora-serverless.html",
               },
               {
+                title: "Youtube Video Downloader Written Entirely in C",
+                link: "https://x.com/7etsuo/status/1839517705952751721",
+              },
+              {
                 title: "Learn Git Branching",
                 link: "https://learngitbranching.js.org",
               },
@@ -404,8 +412,38 @@ function HomePage() {
                 link: "https://tradingriot.com",
               },
               {
+                title: "More on Algorithmic Trading",
+                link: "https://x.com/GoshawkTrades/status/1838617105278644591",
+              },
+              {
+                title: "More Algorithmic Trading...",
+                link: "https://www.youtube.com/watch?v=xfzGZB4HhEE",
+              },
+              {
                 title: "My Two Lives as a Programmer",
                 link: "https://www.maxmynter.com/pages/blog/two-lives",
+              },
+              {
+                title: "Project Euler: Math Problems to Solve",
+                link: "https://projecteuler.net/archives",
+              },
+              {
+                title: "Teach Yourself Computer Science",
+                link: "https://teachyourselfcs.com",
+              },
+              {
+                title:
+                  "Algorithms for Optimization, Decision Making, Validation",
+                link: "https://algorithmsbook.com",
+              },
+              {
+                title: "Leetcode for Machine Learning???",
+                link: "https://www.deep-ml.com",
+              },
+              {
+                title:
+                  "Machine Learning in C (easy way to become Sisyphus lol)",
+                link: "https://www.youtube.com/playlist?list=PLpM-Dvs8t0VZPZKggcql-MmjaBdZKeDMw",
               },
               {
                 title: "NoteBookLM",
