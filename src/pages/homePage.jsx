@@ -369,7 +369,7 @@ function HomePage() {
               darkMode ? "text-cyan-600" : "text-cyan-600"
             }`}>
             <Bookmark size={24} className="mr-2" />
-            To Read
+            BookMarks
           </h2>
           <div className="space-y-4">
             {[
