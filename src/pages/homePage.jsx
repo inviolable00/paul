@@ -358,45 +358,85 @@ function HomePage() {
           </section>
         ))}
 
-        {/* <section
+        {/* SEPERATED FROM OTHERS BECAUSE WOULD NEED FREQUENT UPDATES
+            DIDN'T WANT TO MERGE THEM IN SAME PLACE BASICALLY */}
+        <section
           className={`mb-16 ${
             darkMode ? "bg-gray-800" : "bg-white"
-          } rounded-lg p-6 border-l-4 border-green-500 transition-colors duration-300`}>
-          <h2 className="text-2xl font-medium mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 flex items-center">
+          } rounded-lg p-6 border-l-4 border-blue-400 transition-colors duration-300`}>
+          <h2
+            className={`text-2xl font-medium mb-6 pb-2 border-b border-gray-200 dark:border-gray-700 flex items-center ${
+              darkMode ? "text-cyan-600" : "text-cyan-600"
+            }`}>
             <Bookmark size={24} className="mr-2" />
-            Notes
+            To Read
           </h2>
           <div className="space-y-4">
             {[
-              { title: "LLM Lab", weeks: 483 },
-              { title: "Poems", weeks: 481 },
-              { title: "Functional Analysis", weeks: 477 },
-              { title: "Advice", weeks: 257 },
-              { title: "Quotes", weeks: 171 },
+              {
+                title:
+                  "Quantum Convolutional Neural Networks Useless?? They Might be Classically Simulatable",
+                link: "https://arxiv.org/abs/2408.12739",
+              },
+              {
+                title: "First HyperDimensional Computing Operating System??",
+                link: "https://github.com/NeoVertex1/ComplexTensor",
+              },
+              {
+                title: "Clever Infinite Git Storage Using Commits",
+                link: "https://x.com/bozo10n/status/1839178540484346362",
+              },
+              {
+                title: "Resource Management in Aurora Serverless",
+                link: "https://brooker.co.za/blog/2024/07/29/aurora-serverless.html",
+              },
+              {
+                title: "Learn Git Branching",
+                link: "https://learngitbranching.js.org",
+              },
+              {
+                title:
+                  "Getting Better At Systems Design and Distributed Systems",
+                link: "https://x.com/Franc0Fernand0/status/1838840611442409508",
+              },
+              {
+                title: "Algorithmic Trading",
+                link: "https://tradingriot.com",
+              },
+              {
+                title: "My Two Lives as a Programmer",
+                link: "https://www.maxmynter.com/pages/blog/two-lives",
+              },
+              {
+                title: "NoteBookLM",
+                link: "https://notebooklm.google.com/notebook/f7607d7a-584c-4f35-96fc-f6815c573a6c?utm_source=keyword&utm_medium=email&utm_campaign=BTS24&original_referer=https:%2F%2Fblog.google%23&pli=1",
+              },
             ].map((note, index) => (
-              <Link
-                to={`/notes/${note.title.toLowerCase().replace(/\s+/g, "-")}`}
+              <a
+                href={note.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={index}
                 className={`flex justify-between items-center group p-2 rounded ${
                   darkMode ? "hover:bg-gray-700" : "hover:bg-gray-100"
                 } transition-colors duration-300`}>
-                <span className="group-hover:text-blue-500 transition-colors duration-300 flex items-center">
+                <span className="text-blue-300 group-hover:text-blue-600 transition-colors duration-300 flex items-center">
                   {note.title}
-                  <ArrowRight
-                    className="ml-2 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300"
-                    size={16}
-                  />
+                  <span className="relative ml-2 w-5 h-5">
+                    <ArrowSquareOut
+                      className="absolute inset-0 text-blue-300 group-hover:opacity-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300"
+                      size={12}
+                    />
+                    <ArrowRight
+                      className="absolute inset-0 text-blue-600 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all duration-300"
+                      size={20}
+                    />
+                  </span>
                 </span>
-                <span
-                  className={`${
-                    darkMode ? "text-gray-400" : "text-gray-500"
-                  } text-sm`}>
-                  {note.weeks} weeks ago
-                </span>
-              </Link>
+              </a>
             ))}
           </div>
-        </section> */}
+        </section>
       </div>
     </div>
   );
