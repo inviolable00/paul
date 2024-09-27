@@ -399,6 +399,10 @@ function HomePage() {
                 link: "https://x.com/7etsuo/status/1839517705952751721",
               },
               {
+                title: "Branch and Jump Tables in C and x86 assembly",
+                link: "https://x.com/7etsuo/status/1761469198042309011",
+              },
+              {
                 title: "Learn Git Branching",
                 link: "https://learngitbranching.js.org",
               },
@@ -444,6 +448,14 @@ function HomePage() {
                 title:
                   "Machine Learning in C (easy way to become Sisyphus lol)",
                 link: "https://www.youtube.com/playlist?list=PLpM-Dvs8t0VZPZKggcql-MmjaBdZKeDMw",
+              },
+              {
+                title: "No One is Going To Save You",
+                link: "https://x.com/HARRY_1G/status/1839577363983565135",
+              },
+              {
+                title: "Search for Similar Papers on Arxiv (cool really)",
+                link: "https://searchthearxiv.com",
               },
               {
                 title: "NoteBookLM",
