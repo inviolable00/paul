@@ -387,6 +387,10 @@ function HomePage() {
                 link: "https://github.com/NeoVertex1/ComplexTensor",
               },
               {
+                title: "Deep Q Networks Explained",
+                link: "https://www.lesswrong.com/posts/kyvCNgx9oAwJCuevo/deep-q-networks-explained",
+              },
+              {
                 title: "Clever Infinite Git Storage Using Commits",
                 link: "https://x.com/bozo10n/status/1839178540484346362",
               },
@@ -401,6 +405,10 @@ function HomePage() {
               {
                 title: "Branch and Jump Tables in C and x86 assembly",
                 link: "https://x.com/7etsuo/status/1761469198042309011",
+              },
+              {
+                title: "Interact With Kernel Space in C",
+                link: "https://x.com/chessMan786/status/1841084629408706868",
               },
               {
                 title: "Learn Git Branching",
@@ -422,6 +430,11 @@ function HomePage() {
               {
                 title: "More Algorithmic Trading...",
                 link: "https://www.youtube.com/watch?v=xfzGZB4HhEE",
+              },
+              {
+                title:
+                  "Machine Learning Uses for Algorithmic Trading Strategies",
+                link: "https://x.com/quantscience_/status/1840747434894340538",
               },
               {
                 title: "My Two Lives as a Programmer",
@@ -460,6 +473,10 @@ function HomePage() {
               {
                 title: "NoteBookLM",
                 link: "https://notebooklm.google.com/notebook/f7607d7a-584c-4f35-96fc-f6815c573a6c?utm_source=keyword&utm_medium=email&utm_campaign=BTS24&original_referer=https:%2F%2Fblog.google%23&pli=1",
+              },
+              {
+                title: "Currency News and Impact",
+                link: "https://www.forexfactory.com",
               },
             ].map((note, index) => (
               <a
