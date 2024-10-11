@@ -400,7 +400,7 @@ function HomePage() {
               },
               {
                 title: "Distributed System Toy Implementation (Maelstrom)",
-                link: "https://brooker.co.za/blog/2024/07/29/aurora-serverless.html",
+                link: "https://github.com/jepsen-io/maelstrom",
               },
               {
                 title: "Youtube Video Downloader Written Entirely in C",
