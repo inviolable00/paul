@@ -415,6 +415,14 @@ function HomePage() {
                 link: "https://x.com/chessMan786/status/1841084629408706868",
               },
               {
+                title: "Implementing Shared Pointers in C: Taking Control of Memory",
+                link: "https://x.com/chessMan786/status/1844235558731596233",
+              },
+              {
+                title: "Implementing Dynamic Linking in C",
+                link: "https://x.com/chessMan786/status/1842165601071935949",
+              },
+              {
                 title: "Learn Git Branching",
                 link: "https://learngitbranching.js.org",
               },
