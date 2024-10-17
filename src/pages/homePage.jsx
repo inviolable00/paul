@@ -82,18 +82,19 @@ function HomePage() {
       title: "Currently Working On",
       icon: Bookmark,
       body: [
-        "Creating a Quantum Compiler",
+        "Working on LLVM and MLIR frameworks",
         "Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
       ],
       desc: [
-        "Currently trying to build an advanced version of a Quantum compiler based off Quplexity",
+        "Currently exploring the LLVM and MLIR frameworks for quantum computing with aim of making contributions to open source projects like Catalyst",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
       ],
       link: [
+        "",
         "",
         "https://tabularasaone.vercel.app",
         "https://github.com/inviolable00/ibegwu",
@@ -271,8 +272,7 @@ function HomePage() {
               tabula rasa
             </a>
             .<br></br>As a computer scientist, I enjoy working on various
-            computing projects. I am currently interested in building a quantum
-            compiler. Feel free to reach out through my{" "}
+            computing projects. I am currently interested in contributing to open source quantum software frameworks. Feel free to reach out through my{" "}
             <a
               href="mailto:onojaopaul@gmail.com"
               className="text-blue-500 hover:underline"
@@ -335,17 +335,17 @@ function HomePage() {
                         // CAN REMOVE ALL THESE AND JUST UNCOMMENT THE ONE LINE ABOVE
                         // I DON'T LIKE AS IT BRINGS ABOUT UNNECESSARY COMPLEXITY
                         section.desc[idx]
-                          .split("Quplexity")
+                          .split("Catalyst")
                           .map((part, i, arr) => (
                             <React.Fragment key={i}>
                               {part}
                               {i < arr.length - 1 && (
                                 <a
-                                  href="https://github.com/MrGilli/Quplexity"
+                                  href="https://github.com/PennylaneAI/catalyst"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="text-blue-300 hover:text-blue-600">
-                                  Quplexity
+                                  Catalyst
                                 </a>
                               )}
                             </React.Fragment>
