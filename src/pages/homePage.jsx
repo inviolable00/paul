@@ -28,7 +28,7 @@ function HomePage() {
       body: [
         "Low Level Programming",
         "Quantum Computing (compilation)",
-        "Deep Learning & Quantum Machine Learning",
+        "Deep Learning",
       ],
       desc: [
         "classical compilation, OS dev, reverse engineering",
@@ -88,7 +88,7 @@ function HomePage() {
         "MakeMore",
       ],
       desc: [
-        "Currently exploring the LLVM and MLIR frameworks for quantum computing with aim of making contributions to open source projects like Catalyst",
+        "Currently exploring the LLVM and MLIR frameworks with aim of making contributions to open source projects like Catalyst",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
@@ -224,7 +224,7 @@ function HomePage() {
                 CV
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://drive.google.com/file/d/1EtMvf7vZNojO9uQpITx1vXI-ZNzGqiS5/view?usp=sharing"
                 target="_blank"
@@ -232,7 +232,7 @@ function HomePage() {
                 className="hover:text-blue-400 transition-colors">
                 Research Statement
               </a>
-            </li>
+            </li> */}
           </ol>
           <button
             className={`p-2 rounded-full ${
@@ -272,7 +272,7 @@ function HomePage() {
               tabula rasa
             </a>
             .<br></br>As a computer scientist, I enjoy working on various
-            computing projects. I am currently interested in contributing to open source quantum software frameworks. Feel free to reach out through my{" "}
+            computing projects. I am currently interested in contributing to open source classical and quantum software frameworks. Feel free to reach out through my{" "}
             <a
               href="mailto:onojaopaul@gmail.com"
               className="text-blue-500 hover:underline"
