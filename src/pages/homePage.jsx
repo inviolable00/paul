@@ -57,6 +57,7 @@ function HomePage() {
       title: "Projects",
       icon: Code,
       body: [
+        "Simple Quantum Simulator in C",
         "Auto Free",
         "Infleqtion - Quantum Computer-Aided Design of Atomic Clocks",
         "Simple Autograd: C",
@@ -64,6 +65,7 @@ function HomePage() {
         "Parallelizing a Custom Written Transformer Model",
       ],
       desc: [
+        "using a set of universal basis gates, of CNOT, Hadamard, NOT (X), and T gates, I implemented both matrix multiplication and direct individual qubit manipulation to compare the efficiency and downsides of each approach. the direct individual qubit manipulation runs exponentially faster",
         "auto allocated memory freer in C",
         "wrote and optimized openQasm code to reduce quantum circuit depth",
         "autograd for math expression in C (inspired by andrej karpathy)",
@@ -71,6 +73,7 @@ function HomePage() {
         "tried parallelizing a custom written transformer model",
       ],
       link: [
+        "https://github.com/feelerx/qc_simulator",
         "https://github.com/feelerx/autofreer",
         "https://github.com/feelerx/QRise2024",
         "https://github.com/feelerx/AutoGrad",
@@ -82,18 +85,21 @@ function HomePage() {
       title: "Currently Working On",
       icon: Bookmark,
       body: [
+        "Quantum Simulator Compilation Using LLVM IR",
         "Working on LLVM and MLIR frameworks",
         "Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
       ],
       desc: [
+        "modifying my quantum simulator to generate LLVM Intermediate Representation (LLVM IR) for optimization and portability. This transformation will involve generating LLVM IR code for quantum gates and their operations while adhering to the rules of LLVM's type system and IR structures",
         "Currently exploring the LLVM and MLIR frameworks with aim of making contributions to open source projects like Catalyst",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
       ],
       link: [
+        "https://github.com/feelerx/qc_simulator",
         "",
         "",
         "https://tabularasaone.vercel.app",
@@ -257,7 +263,7 @@ function HomePage() {
         <section className="mb-16 prose prose-lg dark:prose-invert max-w-none">
           <p className="text-2xl ml-4 mb-4">My name is ^</p>
           <p className="mb-4">
-            I fancy computers, science in general, art, philosophy and african
+            I fancy computers, science in general, art, philosophy and the history of african
             politics. Also a Dostoevsky and Naruto fanboy&#128519;
           </p>
           <p>
