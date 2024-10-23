@@ -65,7 +65,7 @@ function HomePage() {
         "Parallelizing a Custom Written Transformer Model",
       ],
       desc: [
-        "using a set of universal basis gates, of CNOT, Hadamard, NOT (X), and T gates, I implemented both matrix multiplication and direct individual qubit manipulation to compare the efficiency and downsides of each approach. the direct individual qubit manipulation runs exponentially faster",
+        "using a set of universal basis gates, of CNOT, Hadamard, NOT (X), and T gates, I implemented a simple qc simulator using matrix multiplication, tensor multiplication and direct qubit manipulation to compare the efficiency and downsides of each approach.",
         "auto allocated memory freer in C",
         "wrote and optimized openQasm code to reduce quantum circuit depth",
         "autograd for math expression in C (inspired by andrej karpathy)",
