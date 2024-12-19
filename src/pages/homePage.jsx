@@ -41,14 +41,17 @@ function HomePage() {
       title: "Publications",
       icon: Book,
       body: [
+        "Cross-Platform Analysis of Quantum Circuit Simulators with State Collapse Mechanisms and Back-Action Tracking in C and Python",
         "Computer Science for Quantum Computing: A Review",
         "Reverse Engineering Memory Management Functions for the MSVC Compiler",
       ],
       desc: [
+        "empirical-based comparative analysis of quantum circuit simulators that are implemented using C and python, focusing on advanced measurement capabilities with state collapse mechanisms [currently under review]",
         "an easy to understand intro to quantum computing for people in comp sci",
         "worked on reverse engineering custom implementations of malloc, calloc, free, realloc for ease of understanding of the inner workings of compilers and how they interact directly with the OS and other OS specific functions",
       ],
       link: [
+        "",
         "https://www.ejmanager.com/mnstemps/262/262-1688073623.pdf?t=1726615424",
         "https://drive.google.com/file/d/14xT7T-hm7zfnCMiZ9Llb_3DyR0t-sspy/view?usp=share_link",
       ],
@@ -57,7 +60,7 @@ function HomePage() {
       title: "Projects",
       icon: Code,
       body: [
-        "Simple Quantum Simulator in C",
+        "Quantum Simulator in C and Python",
         "Auto Free",
         "Infleqtion - Quantum Computer-Aided Design of Atomic Clocks",
         "Simple Autograd: C",
@@ -85,22 +88,19 @@ function HomePage() {
       title: "Currently Working On",
       icon: Bookmark,
       body: [
-        "Qbraid QIR",
-        "Working on LLVM and MLIR frameworks",
+        "Qbraid QIR integration",
         "Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
       ],
       desc: [
-        "qBraid-SDK QIR (Quantum Intermediate Representation) transpiler integration",
-        "Currently exploring the LLVM and MLIR frameworks with aim of making contributions to open source projects like Catalyst",
+        "Integrating Nvidia Cuda-Quantum for targeting Qbraid devices",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
       ],
       link: [
         "https://github.com/qBraid/qbraid-qir",
-        "",
         "https://tabularasaone.vercel.app",
         "https://ibegwu.vercel.app",
         "https://github.com/feelerx/MakeMore",
@@ -277,7 +277,7 @@ function HomePage() {
               tabula rasa
             </a>
             .<br></br>As a computer scientist, I enjoy working on various
-            computing projects. I am currently interested in contributing to open source classical and quantum software frameworks. Feel free to reach out through my{" "}
+            computing projects. I am currently interested in working on effective compilation of classical computation, quantum computation and machine learning compilation. Feel free to reach out through my{" "}
             <a
               href="mailto:onojaopaul@gmail.com"
               className="text-blue-500 hover:underline"
