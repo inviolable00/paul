@@ -46,7 +46,7 @@ function HomePage() {
         "Reverse Engineering Memory Management Functions for the MSVC Compiler",
       ],
       desc: [
-        "empirical-based comparative analysis of quantum circuit simulators that are implemented using C and python, focusing on advanced measurement capabilities with state collapse mechanisms [currently under review]",
+        "empirical-based comparative analysis of quantum circuit simulators that are implemented using C and python, focusing on advanced measurement capabilities with state collapse mechanisms [accepted for publication]",
         "an easy to understand intro to quantum computing for people in comp sci",
         "worked on reverse engineering custom implementations of malloc, calloc, free, realloc for ease of understanding of the inner workings of compilers and how they interact directly with the OS and other OS specific functions",
       ],
@@ -88,8 +88,8 @@ function HomePage() {
       title: "Currently Working On",
       icon: Bookmark,
       body: [
-        "Qbraid QIR integration",
-        "Tabula-Rasa",
+        "Research Mentee: Qbraid QIR integration",
+        "CTO: Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
       ],
@@ -220,7 +220,7 @@ function HomePage() {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://drive.google.com/file/d/1M6MtKktb9nLzaz81PAkh6abP1AGnrqXf/view?usp=sharing"
                 target="_blank"
@@ -228,7 +228,7 @@ function HomePage() {
                 className="hover:text-blue-400 transition-colors">
                 CV
               </a>
-            </li>
+            </li> */}
             {/* <li>
               <a
                 href="https://drive.google.com/file/d/1EtMvf7vZNojO9uQpITx1vXI-ZNzGqiS5/view?usp=sharing"
