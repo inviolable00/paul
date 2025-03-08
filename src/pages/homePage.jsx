@@ -220,24 +220,24 @@ function HomePage() {
                 Home
               </Link>
             </li>
-            {/* <li>
+            <li>
               <a
-                href="https://drive.google.com/file/d/1M6MtKktb9nLzaz81PAkh6abP1AGnrqXf/view?usp=sharing"
+                href="https://docs.google.com/document/d/1_EUVkdtyLgN1yrfGwTgJq1dJ9SqvSstLvqJtHAiApc0/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-400 transition-colors">
                 CV
               </a>
-            </li> */}
-            {/* <li>
+            </li>
+            <li>
               <a
-                href="https://drive.google.com/file/d/1EtMvf7vZNojO9uQpITx1vXI-ZNzGqiS5/view?usp=sharing"
+                href="https://drive.google.com/file/d/1VwWUqDesW3WziCTIQUwh9v7MbDU7y7xw/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-400 transition-colors">
-                Research Statement
+                Certificates
               </a>
-            </li> */}
+            </li>
           </ol>
           <button
             className={`p-2 rounded-full ${
