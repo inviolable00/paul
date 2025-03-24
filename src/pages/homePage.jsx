@@ -23,7 +23,7 @@ function HomePage() {
 
   const sections = [
     {
-      title: "Interests",
+      title: "Interests & Skills",
       icon: Lightbulb,
       body: [
         "Low Level Programming",
@@ -31,8 +31,8 @@ function HomePage() {
         "Deep Learning",
       ],
       desc: [
-        "classical compilation, OS dev, reverse engineering",
-        "quantum compilation, quantum machine learning",
+        "classical compilation (LLVM, LLVM IR), OS dev, reverse engineering",
+        "quantum compilation, quantum intermediate representation (QIR, MLIR)",
         "transormers, deep reinforcement learning",
       ],
       link: ["", "", ""],
@@ -88,18 +88,21 @@ function HomePage() {
       title: "Currently Working On",
       icon: Bookmark,
       body: [
+        "Integrating QIR into a C based Quantum Programming Language",
         "Research Mentee: Qbraid QIR integration",
         "CTO: Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
       ],
       desc: [
+        "development of a C-based quantum-classical execution framework that seamlessly integrates with QIR, allowing quantum programs to be written in C while leveraging LLVM's compiler infrastructure",
         "Integrating Nvidia Cuda-Quantum for targeting Qbraid devices",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
       ],
       link: [
+        "",
         "https://github.com/qBraid/qbraid-qir",
         "https://tabularasaone.vercel.app",
         "https://ibegwu.vercel.app",
@@ -115,7 +118,7 @@ function HomePage() {
         "Learning New Interesting Things",
       ],
       desc: [
-        "watched over 500+ anime and movies (favorites: naruto, bladerunner2049)",
+        "watched over 500+ anime and movies (favorites: naruto, bladerunner2049, your name)",
         "love russian writers and classic novels (favorites: dostoevsky, tolstoy)",
         "read on random things I find interesting especially in physics, nature, psychology, philosophy, history, african politics and more",
       ],
@@ -262,7 +265,7 @@ function HomePage() {
         <section className="mb-16 prose prose-lg dark:prose-invert max-w-none">
           <p className="text-2xl ml-4 mb-4">My name is ^</p>
           <p className="mb-4">
-            I fancy computers, science in general, art, philosophy and the history of african
+            I fancy computers, science in general, art, economics, philosophy and the history of african
             politics. Also a Dostoevsky and Naruto fanboy&#128519;
           </p>
           <p>
