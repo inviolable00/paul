@@ -28,12 +28,12 @@ function HomePage() {
       body: [
         "Low Level Programming",
         "Quantum Computing (compilation)",
-        "Deep Learning",
+        "Distributed Systems",
       ],
       desc: [
         "classical compilation (LLVM, LLVM IR), OS dev, reverse engineering",
         "quantum compilation, quantum intermediate representation (QIR, MLIR)",
-        "transormers, deep reinforcement learning",
+        "distributed storage, databases and ledgers (blockchain)",
       ],
       link: ["", "", ""],
     },
@@ -60,6 +60,9 @@ function HomePage() {
       title: "Projects",
       icon: Code,
       body: [
+        "QIR Base profile Compliant QASM Conversions",
+        "QIR Adaptive Profile compliant QASM conversions",
+        "Qbraid QIR integration",
         "Quantum Simulator in C and Python",
         "Auto Free",
         "Infleqtion - Quantum Computer-Aided Design of Atomic Clocks",
@@ -68,6 +71,9 @@ function HomePage() {
         "Parallelizing a Custom Written Transformer Model",
       ],
       desc: [
+        "Updated the custom qbraid-qir profile to the Base Profile that ensured generated QIR adheres strictly to the Base Profile specification defined by the QIR Alliance",
+        "Added an Adaptive Profile option to qasm3_to_qir conversion that ensured generated QIR adheres strictly to the Adaptive Profile specification defined by the QIR Alliance",
+        "Integrating Nvidia Cuda-Quantum for targeting Qbraid devices",
         "using a set of universal basis gates, of CNOT, Hadamard, NOT (X), and T gates, I implemented a simple qc simulator using matrix multiplication, tensor multiplication and direct qubit manipulation to compare the efficiency and downsides of each approach.",
         "auto allocated memory freer in C",
         "wrote and optimized openQasm code to reduce quantum circuit depth",
@@ -76,6 +82,9 @@ function HomePage() {
         "tried parallelizing a custom written transformer model",
       ],
       link: [
+        "https://github.com/qBraid/qbraid-qir/pull/228",
+        "https://github.com/qBraid/qbraid-qir/pull/225",
+        "https://github.com/qBraid/qbraid-qir",
         "https://github.com/feelerx/qc_simulator",
         "https://github.com/feelerx/autofreer",
         "https://github.com/feelerx/QRise2024",
@@ -89,21 +98,18 @@ function HomePage() {
       icon: Bookmark,
       body: [
         "Integrating QIR into a C based Quantum Programming Language",
-        "Research Mentee: Qbraid QIR integration",
         "CTO: Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
       ],
       desc: [
         "development of a C-based quantum-classical execution framework that seamlessly integrates with QIR, allowing quantum programs to be written in C while leveraging LLVM's compiler infrastructure",
-        "Integrating Nvidia Cuda-Quantum for targeting Qbraid devices",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
       ],
       link: [
         "",
-        "https://github.com/qBraid/qbraid-qir",
         "https://tabularasaone.vercel.app",
         "https://ibegwu.vercel.app",
         "https://github.com/feelerx/MakeMore",
@@ -265,12 +271,11 @@ function HomePage() {
         <section className="mb-16 prose prose-lg dark:prose-invert max-w-none">
           <p className="text-2xl ml-4 mb-4">My name is ^</p>
           <p className="mb-4">
-            I fancy computers, science in general, art, economics, philosophy and the history of african
-            politics. Also a Dostoevsky and Naruto fanboy&#128519;
+            I fancy computers, science in general, art, economics, philosophy and history. Also a Dostoevsky and Naruto fanboy&#128519;
           </p>
           <p>
             Computing wise, I am interested in low-level programming, quantum
-            computing and deeplearning. I am also a cofounder and CTO of
+            computing and distributed systems. I am also a cofounder and CTO of
             <a
               href="https://tabularasaone.vercel.app"
               target="_blank"
