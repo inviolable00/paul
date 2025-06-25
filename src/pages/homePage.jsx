@@ -27,7 +27,7 @@ function HomePage() {
       icon: Lightbulb,
       body: [
         "Low Level Programming",
-        "Quantum Computing (software)",
+        "Quantum Computing (Software)",
         "Distributed Systems",
       ],
       desc: [
