@@ -27,12 +27,12 @@ function HomePage() {
       icon: Lightbulb,
       body: [
         "Low Level Programming",
-        "Quantum Computing (compilation)",
+        "Quantum Computing (software)",
         "Distributed Systems",
       ],
       desc: [
         "classical compilation (LLVM, LLVM IR), OS dev, reverse engineering",
-        "quantum compilation, quantum intermediate representation (QIR, MLIR)",
+        "quantum SDK, quantum compilation, quantum intermediate representation (QIR, MLIR)",
         "distributed storage, databases and ledgers (blockchain)",
       ],
       link: ["", "", ""],
@@ -60,9 +60,9 @@ function HomePage() {
       title: "Projects",
       icon: Code,
       body: [
-        "QIR Base profile Compliant QASM Conversions",
-        "QIR Adaptive Profile compliant QASM conversions",
-        "Qbraid QIR integration",
+        "QIR Base profile Compliant QASM Conversions (Unitary Hackathon Bounty Winner)",
+        "QIR Adaptive Profile compliant QASM conversions (Unitary Hackathon Bounty Winner)",
+        "CudaQ-Qbraid integration",
         "Quantum Simulator in C and Python",
         "Auto Free",
         "Infleqtion - Quantum Computer-Aided Design of Atomic Clocks",
@@ -84,7 +84,7 @@ function HomePage() {
       link: [
         "https://github.com/qBraid/qbraid-qir/pull/228",
         "https://github.com/qBraid/qbraid-qir/pull/225",
-        "https://github.com/qBraid/qbraid-qir",
+        "https://github.com/qBraid/cuda-quantum",
         "https://github.com/feelerx/qc_simulator",
         "https://github.com/feelerx/autofreer",
         "https://github.com/feelerx/QRise2024",
@@ -97,12 +97,14 @@ function HomePage() {
       title: "Currently Working On",
       icon: Bookmark,
       body: [
+        "Framework for Efficient Computing in Distributed Quantum Systems (QIntern)",
         "Integrating QIR into a C based Quantum Programming Language",
         "CTO: Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
       ],
       desc: [
+        "design an inclusive framework for modelling a realistic and the best possible scenario of the general class of such problems and explore quantum and classical approaches to solve them for a system of quantum processors, performing multiple tasks in parallel",
         "development of a C-based quantum-classical execution framework that seamlessly integrates with QIR, allowing quantum programs to be written in C while leveraging LLVM's compiler infrastructure",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
@@ -110,7 +112,8 @@ function HomePage() {
       ],
       link: [
         "",
-        "https://tabularasaone.vercel.app",
+        "",
+        "https://tabularasa2.vercel.app",
         "https://ibegwu.vercel.app",
         "https://github.com/feelerx/MakeMore",
       ],
@@ -121,7 +124,7 @@ function HomePage() {
       body: [
         "Watching Anime and Movies",
         "Reading Novels",
-        "Learning New Interesting Things",
+        "Learning New & Interesting Things",
       ],
       desc: [
         "watched over 500+ anime and movies (favorites: naruto, bladerunner2049, your name)",
@@ -277,7 +280,7 @@ function HomePage() {
             Computing wise, I am interested in low-level programming, quantum
             computing and distributed systems. I am also a cofounder and CTO of
             <a
-              href="https://tabularasaone.vercel.app"
+              href="https://tabularasa2.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline">
