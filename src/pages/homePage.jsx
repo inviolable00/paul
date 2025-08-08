@@ -99,6 +99,7 @@ function HomePage() {
       body: [
         "Framework for Efficient Computing in Distributed Quantum Systems (QIntern)",
         "Integrating QIR into a C based Quantum Programming Language",
+        "Picture-Us",
         "CTO: Tabula-Rasa",
         "Ibegwu",
         "MakeMore",
@@ -106,6 +107,7 @@ function HomePage() {
       desc: [
         "design an inclusive framework for modelling a realistic and the best possible scenario of the general class of such problems and explore quantum and classical approaches to solve them for a system of quantum processors, performing multiple tasks in parallel",
         "development of a C-based quantum-classical execution framework that seamlessly integrates with QIR, allowing quantum programs to be written in C while leveraging LLVM's compiler infrastructure",
+        "share happy memories with friends and family",
         "a start up for african languages",
         "an app for speakers of my native language (igala) to learn about their history and language",
         "attempts at generating AI names (inspired by andrej karpathy)",
@@ -113,6 +115,7 @@ function HomePage() {
       link: [
         "",
         "",
+        "https://picture-us.vercel.app",
         "https://tabularasa2.vercel.app",
         "https://ibegwu.vercel.app",
         "https://github.com/feelerx/MakeMore",
