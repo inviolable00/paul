@@ -28,12 +28,14 @@ function HomePage() {
       body: [
         "Low Level Programming",
         "Quantum Computing (Software)",
-        "Distributed Systems",
+        "Backend Dev & Distributed Systems",
+        "AI/ML"
       ],
       desc: [
         "classical compilation (LLVM, LLVM IR), OS dev, reverse engineering",
         "quantum SDK, quantum compilation, quantum intermediate representation (QIR, MLIR)",
-        "distributed storage, databases and ledgers (blockchain)",
+        "django, fastAPI, redis, kafka, celery",
+        "PU learning, transformer architecture, RAG"
       ],
       link: ["", "", ""],
     },
@@ -281,7 +283,7 @@ function HomePage() {
           </p>
           <p>
             Computing wise, I am interested in low-level programming, quantum
-            computing and distributed systems. I am also a cofounder and CTO of
+            software, AI/ML and backend dev + distributed systems. I am also a cofounder and CTO of
             <a
               href="https://tabularasa2.vercel.app"
               target="_blank"
