@@ -48,9 +48,9 @@ function HomePage() {
         "QIR Adaptive Profile compliant QASM conversions (Unitary Hackathon Bounty Winner)",
         "CudaQ-Qbraid integration",
         "Quantum Simulator in C and Python",
+        "Picture-Us",
         "Auto Free",
         "Simple Autograd: C",
-        "Picture-Us",
         "Parallelizing a Custom Written Transformer Model",
       ],
       desc: [
@@ -59,9 +59,9 @@ function HomePage() {
         "Added an Adaptive Profile option to qasm3_to_qir conversion that ensured generated QIR adheres strictly to the Adaptive Profile specification defined by the QIR Alliance",
         "Integrating Nvidia Cuda-Quantum for targeting Qbraid devices",
         "using a set of universal basis gates, of CNOT, Hadamard, NOT (X), and T gates, I implemented a simple qc simulator using matrix multiplication, tensor multiplication and direct qubit manipulation to compare the efficiency and downsides of each approach.",
+        "share happy memories with friends and family",
         "auto allocated memory freer in C",
         "autograd for math expression in C (inspired by andrej karpathy)",
-        "share happy memories with friends and family",
         "tried parallelizing a custom written transformer model",
       ],
       link: [
@@ -70,9 +70,9 @@ function HomePage() {
         "https://github.com/qBraid/qbraid-qir/pull/225",
         "https://github.com/qBraid/cuda-quantum",
         "https://github.com/feelerx/qc_simulator",
+        "https://picture-us.vercel.app",
         "https://github.com/feelerx/autofreer",
         "https://github.com/feelerx/AutoGrad",
-        "https://picture-us.vercel.app",
         "",
       ],
     },
@@ -290,7 +290,7 @@ function HomePage() {
               tabula rasa
             </a>
             .<br></br>As a computer scientist, I enjoy working on various
-            computing projects. I am currently interested in working on effective compilation of classical computation, quantum computation and machine learning compilation. Feel free to reach out through my{" "}
+            computing projects. Feel free to reach out through my{" "}
             <a
               href="mailto:onojaopaul@gmail.com"
               className="text-blue-500 hover:underline"
