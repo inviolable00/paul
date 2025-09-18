@@ -129,8 +129,8 @@ function HomePage() {
         "Learning New & Interesting Things",
       ],
       desc: [
-        "watched over 500+ anime and movies (favorites: naruto, bladerunner2049, your name)",
-        "love russian writers and classic novels (favorites: dostoevsky, tolstoy)",
+        "watched over 1000+ anime and movies (favorites: naruto, bladerunner2049, your name)",
+        "love russian writers and classic novels (favorites: dostoevsky, achebe)",
         "read on random things I find interesting especially in physics, nature, psychology, philosophy, history, african politics and more",
       ],
       link: ["", "", ""],
