@@ -276,7 +276,7 @@ function HomePage() {
         <section className="mb-16 prose prose-lg dark:prose-invert max-w-none">
           <p className="text-2xl ml-4 mb-4">My name is ^</p>
           <p className="mb-4">
-            I fancy computers, science in general, art, economics, philosophy and history. Also a Dostoevsky and Naruto fanboy&#128519;
+            I fancy computers, science in general, art, economics, philosophy and history. Also a Man United, Dostoevsky and Naruto fanboy&#128519;
           </p>
           <p>
             Computing wise, I am interested in low-level programming, quantum
@@ -403,6 +403,14 @@ function HomePage() {
               {
                 title: "First HyperDimensional Computing Operating System??",
                 link: "https://github.com/NeoVertex1/ComplexTensor",
+              },
+              {
+                title: "The Illustrated Transformer",
+                link: "https://jalammar.github.io/illustrated-transformer/",
+              },
+              {
+                title: "Visualizing A Neural Machine Translation Model",
+                link: "https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/",
               },
               {
                 title: "Deep Q Networks Explained",
