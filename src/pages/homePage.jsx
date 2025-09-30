@@ -110,12 +110,12 @@ function HomePage() {
         "Reverse Engineering Memory Management Functions for the MSVC Compiler",
       ],
       desc: [
-        "empirical-based comparative analysis of quantum circuit simulators that are implemented using C and python, focusing on advanced measurement capabilities with state collapse mechanisms [accepted for publication]",
+        "empirical-based comparative analysis of quantum circuit simulators that are implemented using C and python, focusing on advanced measurement capabilities with state collapse mechanisms",
         "an easy to understand intro to quantum computing for people in comp sci",
         "worked on reverse engineering custom implementations of malloc, calloc, free, realloc for ease of understanding of the inner workings of compilers and how they interact directly with the OS and other OS specific functions",
       ],
       link: [
-        "",
+        "https://link.springer.com/chapter/10.1007/978-3-031-85614-3_16",
         "https://www.ejmanager.com/mnstemps/262/262-1688073623.pdf?t=1726615424",
         "https://drive.google.com/file/d/14xT7T-hm7zfnCMiZ9Llb_3DyR0t-sspy/view?usp=share_link",
       ],
